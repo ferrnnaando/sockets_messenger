@@ -4,45 +4,43 @@
 #include <iphlpapi.h>
 #include <cstdio>
 
-#include "error_handling/error_handling.h"
+//#include "error_handling/error_handling.h"
 #pragma comment(lib, "Ws2_32.lib")
 
 class ERROR_HANDLING {
     public:
         typedef struct MB_BADCON {
-            const HWND   hWnd    = NULL;
+            const HWND   hWnd    = nullptr;
             const LPCSTR TITLE   = "Connectivity troubles.";
             const LPCSTR CONTENT = "There was an error trying to connect to the application, please check your internet connection.";
             const UINT   type    = MB_OK | MB_ICONERROR;
         };
 };
 
-class ARCH_CONN {
+class resolveServerAddress {
     //https://es.wikipedia.org/wiki/Anexo:Puertos_de_red
-    private:
+    public:
+        resolveServerAddress();
+        ~resolveServerAddress();
+
         typedef struct IRC {
-            const UINT PORT         = 6667;
-            const UINT BUFFERSIZE_1 = 1024;
-            const UINT BUFFERSIZ_2  = 4096;
+            const PCSTR SERVER_PORT    = "6667";
+            const PCSTR SERVER_ADDRESS = "127.0.0.1";
+            const UINT  BUFFERSIZE_1   = 1024;
+            const UINT  BUFFERSIZ_2    = 4096;
         };
 
-        struct addrinfo* result = NULL,
-            * ptr = NULL,
-            hints;
-
-    public:
-        ARCH_CONN();
-        ~ARCH_CONN();
+        struct addrinfo* result = nullptr, *ptr = nullptr, hints;
 };
 
-ARCH_CONN::ARCH_CONN() {
+resolveServerAddress::resolveServerAddress() {
     ZeroMemory(&hints, sizeof(hints));
     hints.ai_family   = AF_INET;
     hints.ai_socktype = SOCK_DGRAM;
     hints.ai_protocol = IPPROTO_UDP;
 }
 
-ARCH_CONN::~ARCH_CONN() {};
+resolveServerAddress::~resolveServerAddress() {};
 
 int __cdecl main() {
     ERROR_HANDLING::MB_BADCON MB_BADCON;
@@ -58,10 +56,12 @@ int __cdecl main() {
         default:
             MessageBox(MB_BADCON.hWnd, MB_BADCON.CONTENT, MB_BADCON.TITLE, MB_BADCON.type);
             WSACleanup();
-            break;
+            return -1;
     }
-    
 
+    resolveServerAddress::IRC serverConnexion;
+    resolveServerAddress serverSocket;
+    int resolveAddress = getaddrinfo(serverConnexion.SERVER_ADDRESS, serverConnexion.SERVER_PORT, &serverSocket.hints, &serverSocket.result);
     //hibite, lobite
 
     WSACleanup();
