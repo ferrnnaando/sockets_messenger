@@ -18,12 +18,15 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="error_handling\error_handling.cpp">
+    <ClCompile Include="SocketConnexionHandler\SocketConnexionHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="error_handling\error_handling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketConnexionHandler\SocketConnexionHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,2 +1,5 @@
-﻿  error_handling.cpp
+﻿  main.cpp
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.h(15,10): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADSTART' when no variable is declared
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.h(22,10): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADCONNEXION' when no variable is declared
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(22,10): warning C4091: 'typedef ': ignored on left of 'resolveServerAddress::IRC' when no variable is declared
   first_winsockets.vcxproj -> C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\first_winsockets.exe
