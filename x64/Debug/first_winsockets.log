@@ -1,0 +1,21 @@
+﻿  error_handling.cpp
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.h(10,29): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADCON' when no variable is declared
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.cpp(8,5): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADCON' when no variable is declared
+  main.cpp
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.h(10,29): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADCON' when no variable is declared
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(10,22): error C2011: 'ERROR_HANDLING': 'class' type redefinition
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.h(8,7): message : see declaration of 'ERROR_HANDLING'
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(27,10): warning C4091: 'typedef ': ignored on left of 'ARCH_CONN::IRC' when no variable is declared
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(48,21): error C2027: use of undefined type 'ERROR_HANDLING'
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\error_handling\error_handling.h(8,7): message : see declaration of 'ERROR_HANDLING'
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(48,21): error C2065: 'MB_BADCON': undeclared identifier
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(48,31): error C2146: syntax error: missing ';' before identifier 'MB_BADCON'
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(48,31): error C2065: 'MB_BADCON': undeclared identifier
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(59,24): error C2065: 'MB_BADCON': undeclared identifier
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(59,40): error C2065: 'MB_BADCON': undeclared identifier
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(59,59): error C2065: 'MB_BADCON': undeclared identifier
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(59,76): error C2065: 'MB_BADCON': undeclared identifier
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(59,13): error C2660: 'MessageBoxA': function does not take 1 arguments
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(9172,1): message : see declaration of 'MessageBoxA'
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp(59,13): message : while trying to match the argument list '()'
+  Generating Code...
