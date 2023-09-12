@@ -8,13 +8,13 @@ class resolveServerAddress {
         resolveServerAddress();
         ~resolveServerAddress() {};
 
-        typedef struct IRC {
+        struct IRC {
             const PCSTR SERVER_PORT = "6667";
             const PCSTR SERVER_ADDRESS = "127.0.0.1";
             const UINT  BUFFERSIZE = 1024;
         };
 
-        struct addrinfo* result = nullptr, * ptr = nullptr, hints;
+        struct addrinfo* result = nullptr, *ptr = nullptr, hints;
 };
 
 //https://es.wikipedia.org/wiki/Anexo:Puertos_de_red

@@ -1,6 +1,5 @@
-﻿  SocketConnexionHandler.cpp
-C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\client\SocketConnexionHandler\SocketConnexionHandler.h(13,6): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADSTART' when no variable is declared
-C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\client\SocketConnexionHandler\SocketConnexionHandler.h(20,6): warning C4091: 'typedef ': ignored on left of 'ERROR_HANDLING::MB_BADCONNEXION' when no variable is declared
-  client.cpp
-C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\client\client.cpp(8,10): fatal  error C1083: Cannot open include file: 'error_handling/error_handling.h': No such file or directory
+﻿  client.cpp
+  resolveServerAddress.cpp
+  SocketConnexionHandler.cpp
   Generating Code...
+  first_winsockets.vcxproj -> C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\first_winsockets.exe

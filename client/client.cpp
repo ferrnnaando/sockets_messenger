@@ -8,12 +8,10 @@
 #include "resolveServerAddress/resolveServerAddress.h"
 #include "SocketConnexionHandler/SocketConnexionHandler.h"
 
-int __cdecl main() {
-    UINT CON_RSLT, RESOLVE_SERVER_CONNEX, resolveServerConnection;
+int __cdecl main(SOCKET()) {
+    int resolveServerConnection;
+    UINT CON_RSLT, RESOLVE_SERVER_CONNEX;
     SOCKET ConnectSocket = INVALID_SOCKET;
-
-    ERROR_HANDLING::MB_BADSTART* MB_BADSTARTUP;
-    ERROR_HANDLING::MB_BADCONNEXION* MB_BADADDR;
 
     WSADATA wsaData;
     WORD    wVersionRequested = MAKEWORD(2, 2);
@@ -24,8 +22,9 @@ int __cdecl main() {
 
     RESOLVE_SERVER_CONNEX = getaddrinfo(serverConnexion.SERVER_ADDRESS, serverConnexion.SERVER_PORT, &serverSocket.hints, &serverSocket.result);
     ConnectSocket = socket(serverSocket.hints.ai_family, serverSocket.hints.ai_socktype, serverSocket.hints.ai_protocol);
-    resolveServerConnection = SocketConnexionHandler(CON_RSLT, ConnectSocket, RESOLVE_SERVER_CONNEX, MB_BADSTARTUP, MB_BADADDR);
 
+    SocketConnexionHandler connHandler(CON_RSLT, ConnectSocket, RESOLVE_SERVER_CONNEX);
+    resolveServerConnection = connHandler.connResolver();
     switch(resolveServerConnection) {
         case 0:
             break;
