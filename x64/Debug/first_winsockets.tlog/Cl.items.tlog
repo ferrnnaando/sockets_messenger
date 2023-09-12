@@ -1,2 +1,4 @@
-C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\main.cpp;C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\main.obj
-C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\SocketConnexionHandler\SocketConnexionHandler.cpp;C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\SocketConnexionHandler.obj
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\client\client.cpp;C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\client.obj
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\client\resolveServerAddress\resolveServerAddress.cpp;C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\resolveServerAddress.obj
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\client\SocketConnexionHandler\SocketConnexionHandler.cpp;C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\SocketConnexionHandler.obj
+C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\server\server.cpp;C:\Users\ferni\Desktop\Dev\cpp\sockets\first_winsockets\x64\Debug\server.obj

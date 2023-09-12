@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="SocketConnexionHandler\SocketConnexionHandler.cpp" />
+    <ClCompile Include="client\client.cpp" />
+    <ClCompile Include="client\resolveServerAddress\resolveServerAddress.cpp" />
+    <ClCompile Include="client\SocketConnexionHandler\SocketConnexionHandler.cpp" />
+    <ClCompile Include="server\server.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="error_handling\error_handling.h" />
-    <ClInclude Include="SocketConnexionHandler\SocketConnexionHandler.h" />
+    <ClInclude Include="client\resolveServerAddress\resolveServerAddress.h" />
+    <ClInclude Include="client\SocketConnexionHandler\SocketConnexionHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
